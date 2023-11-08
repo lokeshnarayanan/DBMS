@@ -51,7 +51,8 @@ public class App {
 ```
 ### Output:
 
-![image](https://github.com/lokeshnarayanan/DBMS/assets/119393019/8ea26ef0-3e64-4bfa-ae3f-10b647507d87)
+![image](https://github.com/lokeshnarayanan/DBMS/assets/119393019/3e808967-682a-4255-90a2-d7327a31d7ea)
+
 
 ### Result:
 Thust the database is connected and data displayed sucessfully.
