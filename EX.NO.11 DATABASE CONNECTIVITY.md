@@ -11,10 +11,47 @@
 6. Run the program
 
 ### Program:
+```
+##DEVELOPED BY:LOKESH N
+##REG.NO:212222100023
+```
+```python
+package com.employees;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
+public class App {
+	public static void main(String[] args) throws SQLException {
+
+		System.out.println("Connecting to DB");
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "Root@2005");
+
+		System.out.println("Connection Successfull");
+
+		Statement stmt = con.createStatement();
+		ResultSet rs = stmt.executeQuery("Select * from employees");
+		
+
+		while (rs.next()) {
+			System.out.println("id :" + rs.getInt("Emp_id"));
+			System.out.println("name :" + rs.getString("Emp_name"));
+			System.out.println("salary :" + rs.getInt("Emp_salary"));
+
+		}
+		con.close();
+		System.out.println("Connection closed");
+
+	}
+
+}
+```
 ### Output:
 
+![image](https://github.com/lokeshnarayanan/DBMS/assets/119393019/8ea26ef0-3e64-4bfa-ae3f-10b647507d87)
 
 ### Result:
 Thust the database is connected and data displayed sucessfully.
